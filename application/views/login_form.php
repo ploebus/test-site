@@ -11,9 +11,9 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   
-<link rel="stylesheet" href="<?php echo base_url();?>/assets/datepicker/css/datepicker.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
-  <script type="text/javascript" src="<?php echo base_url();?>/assets/datepicker/js/bootstrap-datepicker.js"></script>
-  <link rel="stylesheet" href="<?php echo base_url();?>/assets/stylesheets/style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+<link rel="stylesheet" href="assets/datepicker/css/datepicker.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+  <script type="text/javascript" src="assets/datepicker/js/bootstrap-datepicker.js"></script>
+  <link rel="stylesheet" href="assets/stylesheets/style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
 
 <style type="text/css">
   .navbar-inverse {
