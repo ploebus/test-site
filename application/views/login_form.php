@@ -12,7 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   
 
- <link rel="stylesheet" href="<?php echo link_tag('assets/stylesheets/style.css');?>" type="text/css" media="screen" title="no title" charset="utf-8"/>
+<?php echo link_tag('assets/stylesheets/style.css');?>
 
 <style type="text/css">
   .navbar-inverse {
