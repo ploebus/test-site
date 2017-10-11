@@ -45,7 +45,7 @@
 			<a href="#createGroupModal" data-toggle="modal"><span class='glyphicon glyphicon-plus '></span> Create a Group</a>
 			<p>Create a group if you want to organize your clients. This is optional and only for your convenience.</p>
 			 
-			<!-- Confirm Delete Modal -->
+			<!-- Create Group Modal -->
 <div id="createGroupModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
