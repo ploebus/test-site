@@ -66,7 +66,7 @@
 <input type="text" class="form-control" style="border:solid thin lightgrey" name="cohort_name" placeholder="Enter cohort name"></input>
 </div>
 <div class="form-group">
-    <label for="cohort_startdate">Cohort Start Date</label>
+    <label for="cohort_startdate">Group Start Date</label>
      <div class="input-group date">
       <input type="text" id="activity_date" name="cohort_startdate" class="datepicker form-control">
       <div class="input-group-addon">
@@ -78,7 +78,7 @@
 
 
 <div class="form-group">
-    <label for="cohort_startdate">Cohort End Date</label>
+    <label for="cohort_startdate">Cohort End Date (optional)</label>
      <div class="input-group date">
       <input type="text" id="activity_date" name="cohort_enddate" class="datepicker form-control">
       <div class="input-group-addon">
@@ -457,15 +457,23 @@
 
 		});
 
-		$("#dateAwarded").datepicker({format:'yyyy/mm/dd'})
+		$("#dateAwarded").datepicker({format:'yyyy/mm/dd'});
+
+		$('.datepicker').datepicker(
+		{format:"yyyy-mm-dd",
+    
+	}).on('changeDate',function(e){
+    $(this).datepicker('hide')
+  });
+
 		
 		$("#newCohort").submit(function(event){
     		event.preventDefault();
     		$data = $("#newCohort").serialize();
     		$.post('create_cohort',$data,function(data){
       		window.location.href = 'home_page';
-    })
-  })
+    })});
+  
 
 		
 
