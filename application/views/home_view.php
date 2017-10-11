@@ -68,7 +68,7 @@
 <div class="form-group">
     <label for="cohort_startdate">Group Start Date</label>
      <div class="input-group date">
-      <input type="text" id="activity_date" name="cohort_startdate" class="datepicker form-control">
+      <input type="date" id="cohort_sdate" name="cohort_startdate" class="datepicker form-control">
       <div class="input-group-addon">
           <span class="glyphicon glyphicon-th"></span>
       </div>
@@ -80,7 +80,7 @@
 <div class="form-group">
     <label for="cohort_startdate">Cohort End Date (optional)</label>
      <div class="input-group date">
-      <input type="text" id="activity_date" name="cohort_enddate" class="datepicker form-control">
+      <input type="date" id="cohort_edate" name="cohort_enddate" class="datepicker form-control">
       <div class="input-group-addon">
           <span class="glyphicon glyphicon-th"></span>
       </div>
