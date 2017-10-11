@@ -13,7 +13,7 @@
 	
 	
 	<?php echo link_tag('assets/stylesheets/datepicker.css'); ?>
-	<?php echo link_tag('assets/javascripts/bootstrap-datepicker.js','','type/javascript'); ?>
+	<?php echo link_tag('assets/javascripts/bootstrap-datepicker.js','script','type/javascript'); ?>
     <?php echo link_tag('assets/stylesheets/style.css'); ?>
 <style type="text/css">
 	.navbar-inverse {
@@ -35,6 +35,14 @@
 	
 </style>
 
+<Script>
+	$('.datepicker').datepicker(
+		{format:"yyyy-mm-dd",
+    
+	}).on('changeDate',function(e){
+    $(this).datepicker('hide')
+  });
+</Script>
 
 </head>
 <body>
