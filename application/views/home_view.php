@@ -42,9 +42,75 @@
 
 		<div class="row">
 			<h4>Groups </h4>
-			<a href="add_cohort"><span class='glyphicon glyphicon-plus '></span> Create a Group</a>
+			<a href="#createGroupModal" data-toggle="modal"><span class='glyphicon glyphicon-plus '></span> Create a Group</a>
 			<p>Create a group if you want to organize your clients. This is optional and only for your convenience.</p>
 			 
+			<!-- Confirm Delete Modal -->
+<div id="createGroupModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+	    <div class="modal-content">
+	      	<div class="modal-header">
+	        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+	        	<h4 class="modal-title">CONFIRM DELETE</h4>
+	      	</div>
+	      	<div class="modal-body">
+	      
+		      	<form id='newCohort' method='POST'>
+
+<div class='form-group'>
+
+
+<label for="cohort_name">Group Name:</label>
+<input type="text" class="form-control" style="border:solid thin lightgrey" name="cohort_name" placeholder="Enter cohort name"></input>
+</div>
+<div class="form-group">
+    <label for="cohort_startdate">Cohort Start Date</label>
+     <div class="input-group date">
+      <input type="text" id="activity_date" name="cohort_startdate" class="datepicker form-control">
+      <div class="input-group-addon">
+          <span class="glyphicon glyphicon-th"></span>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="form-group">
+    <label for="cohort_startdate">Cohort End Date</label>
+     <div class="input-group date">
+      <input type="text" id="activity_date" name="cohort_enddate" class="datepicker form-control">
+      <div class="input-group-addon">
+          <span class="glyphicon glyphicon-th"></span>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+ 
+
+<input type='hidden' name='agency_name' value="<?php echo $this->session->userdata('OrgName'); ?>"></input>
+ <button type="submit" class="btn btn-default">Create Cohort</button>
+
+</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!---END MODAL-->
+
+
+
+
+
+
+
 			<table class="table table-striped">
 			<thead>
 			<th>Group Name</th>

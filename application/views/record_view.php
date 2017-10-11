@@ -3,7 +3,7 @@
 	
 <div class="row">
 <h3>Record View : <?php echo $child->child_firstname . ' ' . $child->child_lastname; ?> </h3>
-<a class="addActivityLink" href="<?php echo base_url();?>site/home_page"><span class='glyphicon glyphicon-arrow-left'></span>    Go back to summary screen</a>
+<a class="addActivityLink" href="<?php echo base_url();?>index.php/site/home_page"><span class='glyphicon glyphicon-arrow-left'></span>    Go back to summary screen</a>
 
 </div>
 <hr />
