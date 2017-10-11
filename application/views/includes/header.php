@@ -13,7 +13,8 @@
 	
 	
 	<?php echo link_tag('assets/stylesheets/datepicker.css'); ?>
-	<?php echo link_tag('assets/javascripts/bootstrap-datepicker.js','script','type/javascript'); ?>
+	
+	<script type="text/javascript" src="<?php echo base_url();?>assets/javascripts/bootstrap-datepicker.js"></script>
     <?php echo link_tag('assets/stylesheets/style.css'); ?>
 <style type="text/css">
 	.navbar-inverse {
