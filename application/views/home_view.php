@@ -57,7 +57,7 @@
 	      	</div>
 	      	<div class="modal-body">
 	      
-		      	<form id='createCohort' method='POST'>
+		      	<form id='newCohort' method='POST'>
 
 <div class='form-group'>
 
