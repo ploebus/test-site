@@ -53,7 +53,7 @@
 	    <div class="modal-content">
 	      	<div class="modal-header">
 	        	<button type="button" class="close" data-dismiss="modal">&times;</button>
-	        	<h4 class="modal-title">CONFIRM DELETE</h4>
+	        	<h4 class="modal-title">Create Group</h4>
 	      	</div>
 	      	<div class="modal-body">
 	      
@@ -459,7 +459,13 @@
 
 		$("#dateAwarded").datepicker({format:'yyyy/mm/dd'})
 		
-		
+		$("#newCohort").submit(function(event){
+    		event.preventDefault();
+    		$data = $("#newCohort").serialize();
+    		$.post('create_cohort',$data,function(data){
+      		window.location.href = 'home_page';
+    })
+  })
 
 		
 
