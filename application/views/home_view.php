@@ -57,7 +57,7 @@
 	      	</div>
 	      	<div class="modal-body">
 	      
-		      	<form id='newCohort' method='POST'>
+		      	<form id='createCohort' method='POST'>
 
 <div class='form-group'>
 
@@ -278,14 +278,7 @@
 </div>
 	<!---END MODAL-->
 
-<script type="text/javascript">
-	$('.datepicker').datepicker(
-		{format:"yyyy-mm-dd",
-    
-	}).on('changeDate',function(e){
-    $(this).datepicker('hide')
-  });
-</script>
+
 
 
 <!-- Confirm Delete Modal -->
