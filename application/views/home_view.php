@@ -397,8 +397,8 @@
 			
 			$.post('remove_cohort',theData, function(data){
 				
-				//location.reload();
-				window.location.href="<?php echo base_url(); ?>site/home_page";
+				location.reload();
+				//window.location.href="<?php echo base_url(); ?>site/home_page";
 
 			});
 
@@ -450,21 +450,16 @@
 
 		});
 
-		$("#dateAwarded").datepicker({format:'yyyy/mm/dd'});
+		/*$("#dateAwarded").datepicker({format:'yyyy/mm/dd'});*/
 
-		$('.datepicker').datepicker(
-		{format:"yyyy-mm-dd",
-    
-	}).on('changeDate',function(e){
-    $(this).datepicker('hide')
-  });
+		
 
 		
 		$("#newCohort").submit(function(event){
     		event.preventDefault();
     		$data = $("#newCohort").serialize();
     		$.post('create_cohort',$data,function(data){
-      		$("#createGroupModal").modal('toggle')
+      		location.reload();
       	})
     	})
   
