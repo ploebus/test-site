@@ -11,10 +11,11 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	
-	<link rel="stylesheet" href="assets/datepicker/css/datepicker.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
-  <script type="text/javascript" src="assets/datepicker/js/bootstrap-datepicker.js"></script>
-  <link rel="stylesheet" href="<?php echo link_tag('assets/stylesheets/style.css'); ?>" type="text/css" media="screen" title="no title" charset="utf-8"/>
-
+	
+	<?php echo link_tag('assets/datepicker/css/datapicker.css'); ?>
+	<?php echo link_tag('assets/datepicker/js/bootstrap-datepicker.js'); ?>
+  
+<?php echo link_tag('assets/stylesheets/style.css'); ?>
 <style type="text/css">
 	.navbar-inverse {
 		background-color: lightblue
