@@ -471,8 +471,9 @@
     		event.preventDefault();
     		$data = $("#newCohort").serialize();
     		$.post('create_cohort',$data,function(data){
-      		window.location.href = 'home_page';
-    })});
+      		$("#createGroupModal").modal('toggle')
+      	})
+    	})
   
 
 		
