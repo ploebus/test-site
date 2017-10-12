@@ -74,14 +74,15 @@ Class Dev extends CI_Model
 
   		if ($this->session->userdata('OrgName') !=='admin'){
   			$sql.=" AND AssignedTo='".$this->session->userdata('OrgName')."'";
-        //$this->db->where('AssignedTo', $this->session->userdata('OrgName'));
+         $sql .= " ORDER BY cohort asc, activity_date asc, child_firstname asc";
+        
       }
-  		//$this->db->order_by('child_firstname','asc');
-      //$this->db->order_by('AssignedTo','asc');
-      $sql .= " ORDER BY cohort asc, activity_date asc, child_firstname asc";
-      //$query = $this->db->get();
+  		else{
+      
+      $sql .= " ORDER BY AssignedTo asc, activity_date asc, child_firstname asc";
+      }
       $query = $this->db->query($sql);
-      //echo $sql;
+      
       return $query->result();
   	}
 
