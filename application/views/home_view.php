@@ -453,7 +453,7 @@
 		/*$("#dateAwarded").datepicker({format:'yyyy/mm/dd'});*/
 
 		
-		$('.datepicker').datepicker({format:'yyy/mm/dd'});
+		/*$('.datepicker').datepicker({format:'yyy/mm/dd'});*/
 		
 		$("#newCohort").submit(function(event){
     		event.preventDefault();

@@ -39,14 +39,14 @@
 	
 </style>
 
-<Script>
+<script>
 	$('.datepicker').datepicker(
 		{format:"yyyy-mm-dd",
     
 	}).on('changeDate',function(e){
     $(this).datepicker('hide')
   });
-</Script>
+</script>
 
 </head>
 <body>
