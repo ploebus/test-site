@@ -38,7 +38,7 @@
 </head>
 <body>
 <div class="container">
-<div class="row">
+<div class="row" style="margin-top: 100px">
 <div class="col-md-7">
 <h2>Welcome</h2>
 <h5>This tool is meant to help you manage and report your interactions with clients. If you have any questions or feedback about this tool or the program, please contact Help Me Grow</h5>
