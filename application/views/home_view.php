@@ -398,7 +398,7 @@
 			$.post('remove_cohort',theData, function(data){
 				
 				location.reload();
-				//window.location.href="<?php echo base_url(); ?>site/home_page";
+				
 
 			});
 
@@ -453,7 +453,7 @@
 		/*$("#dateAwarded").datepicker({format:'yyyy/mm/dd'});*/
 
 		
-
+		$('.datepicker').datepicker({format:'yyy/mm/dd'});
 		
 		$("#newCohort").submit(function(event){
     		event.preventDefault();

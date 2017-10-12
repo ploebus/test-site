@@ -2,15 +2,15 @@
 
 <div class="row">
 <div class='col-md-10'>
-<h1> Create a cohort</h1>
-<a class="addActivityLink" href="<?php echo base_url();?>site/home_page"><span class='glyphicon glyphicon-arrow-left'></span>    Go back to summary screen</a>
+<h1> Create a group</h1>
+<a class="addActivityLink" href="<?php echo base_url();?>/index.php/site/home_page"><span class='glyphicon glyphicon-arrow-left'></span>    Go back to summary screen</a>
 <hr />
 <form id='newCohort' method='POST'>
 
 <div class='form-group'>
 
 
-<label for="cohort_name">Cohort Name:</label>
+<label for="cohort_name">Group Name:</label>
 <input type="text" class="form-control" style="border:solid thin lightgrey" name="cohort_name" placeholder="Enter cohort name"></input>
 </div>
 <div class="form-group">
