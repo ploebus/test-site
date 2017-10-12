@@ -210,6 +210,7 @@ Class Dev extends CI_Model
       WHERE status_item = ?
       and status = ?
       and AssignedTo not in ("admin","Agency 1")
+      and openSW = 1
       order by AssignedTo asc';
 
 
@@ -225,6 +226,7 @@ Class Dev extends CI_Model
       WHERE status_item = ?
       and status = ?
       and AssignedTo not in ("admin","Agency 1")
+      and openSW = 1
       order by AssignedTo asc';
       $query = $this->db->query($sql,array($item,$status));
       return $query->result();
