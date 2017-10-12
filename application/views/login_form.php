@@ -38,7 +38,8 @@
 </head>
 <body>
 
-
+<h2>Welcome</h2>
+<h5>This tool is meant to help you manage and report your interactions with clients. If you have any questions or feedback about this tool or the program, please contact Help Me Grow</h5>
    
 
    <div id="login_form" class="shadow">
