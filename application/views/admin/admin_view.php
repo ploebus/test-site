@@ -13,6 +13,7 @@
 	
 		<div class="col-md-6">
 			<h4><a href ='#packetSent' data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"><span class='glyphicon glyphicon-check'></span>    Needs to have initial packet sent</a></h4>
+			<hr />
 			<div class="row collapse" id="packetSent">
 			<table class="table table-striped">
 				<thead>
@@ -38,6 +39,7 @@
 		</div>
 		<div class="col-md-6">
 			<h4><a href ='#packetReturned' data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"><span class='glyphicon glyphicon-check'></span>    Needs to have initial packet returned</a></h4>
+			<hr />
 			<div class="row collapse" id="packetReturned">
 			<table class="table table-striped">
 				<thead>
