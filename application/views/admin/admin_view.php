@@ -12,7 +12,8 @@
 <div class="row">
 	
 		<div class="col-md-6">
-			<h4>Needs to have initial packet sent</h4>
+			<h4><a href ='#packetSent' data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"><span class='glyphicon glyphicon-check'></span>    Needs to have initial packet sent</a></h4>
+			<div class="row collapse" id="packetSent">
 			<table class="table table-striped">
 				<thead>
 					<th>NAME</th>
@@ -34,8 +35,10 @@
 
 			</table>
 		</div>
+		</div>
 		<div class="col-md-6">
-			<h4>Needs to have initial packet returned</h4>
+			<h4><a href ='#packetReturned' data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"><span class='glyphicon glyphicon-check'></span>    Needs to have initial packet returned</a></h4>
+			<div class="row collapse" id="packetReturned">
 			<table class="table table-striped">
 				<thead>
 					<th>NAME</th>
@@ -52,6 +55,7 @@
 						<?php endforeach; ?>
 
 			</table>
+		</div>
 		</div>
 </div>
 <div class="row">
