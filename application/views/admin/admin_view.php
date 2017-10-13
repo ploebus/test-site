@@ -75,6 +75,7 @@
 	</thead>
 	<?php foreach ($children as $child):?>
 		<?php if($child->AssignedTo != 'Agency 1' ):?>
+			<?php if($child->AssignedTo != 'admin' ):?>
 	<tr>
 		<td><?php echo $child->child_firstname. " " . $child->child_lastname ;?></td>
 		<td><?php echo date_format(date_create($child->date_created),'m/d/Y'); ?></td>
@@ -88,6 +89,7 @@
 		<td><?php echo $child->AssignedTo ;?></td>
 		<td style='font-size:.9em'><a href ="view_child/<?php echo $child->child_id ;?>" class="recordView">VIEW</a> | <a class="remove_child_start" data-kid="<?php echo $child->child_id; ?>" href="do_something">REMOVE RECORD</a> </td>
 	</tr>
+	<?php endif; ?>
 <?php endif; ?>
 	<?php endforeach;?>
 </table>
