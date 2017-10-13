@@ -74,7 +74,7 @@
 	<th>ACTIONS</th>
 	</thead>
 	<?php foreach ($children as $child):?>
-		<?php if($child->AssignedTo != 'Agency1' ):?>
+		<?php if($child->AssignedTo != 'Agency 1' ):?>
 	<tr>
 		<td><?php echo $child->child_firstname. " " . $child->child_lastname ;?></td>
 		<td><?php echo date_format(date_create($child->date_created),'m/d/Y'); ?></td>
