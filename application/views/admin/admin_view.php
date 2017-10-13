@@ -71,7 +71,7 @@
 	<th>DATE ENROLLED</th>
 	<th>LAST COMPLETED STATUS</th>
 	<th>DATE OF STATUS COMPLETED</th>
-	<th>ASSIGNED TO</th>
+	<th data-class-name="priority">ASSIGNED TO</th>
 	<th>ACTIONS</th>
 	</thead>
 	<?php foreach ($children as $child):?>
