@@ -64,6 +64,7 @@
 <div class="col-md-10">
 <h4>Children</h4>
 <a href="add_child"> <span class='glyphicon glyphicon-plus '></span> Add a Child</a>
+<hr />
 <table class='table table-striped' id="childTable">
 	<thead>
 	<th>NAME</th>
