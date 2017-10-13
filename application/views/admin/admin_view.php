@@ -64,7 +64,7 @@
 <div class="col-md-10">
 <h4>Children</h4>
 <a href="add_child"> <span class='glyphicon glyphicon-plus '></span> Add a Child</a>
-<table class='table table-striped'>
+<table class='table table-striped' id="childTable">
 	<thead>
 	<th>NAME</th>
 	<th>DATE ENROLLED</th>
@@ -119,7 +119,9 @@
 		
 		var selectedChild;
 
-				
+		$(document).ready( function () {
+    $('#childTable').DataTable();
+} );		
 	
 		$('.remove_child_start').click(function(event){
 			event.preventDefault();
