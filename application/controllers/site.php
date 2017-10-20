@@ -114,11 +114,11 @@ class site extends CI_Controller {
 	 }
 
 	 function edit_activity(){
-	 	
+	 	$this->load->model('Dev');
 	 	$this->load->helper('form');
 	 	$data['main_content'] = 'edit_activity';
 	 	$data['activity'] = $this->Dev->get_activity();
-	 	$data['cohorts'] = $this->Dev->get_cohorts();
+	 	//$data['cohorts'] = $this->Dev->get_cohorts();
 
 	 	$this->load->view('includes/template',$data);
 	 }
