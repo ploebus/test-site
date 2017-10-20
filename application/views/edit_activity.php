@@ -1,7 +1,7 @@
 <div class="container" style="margin-top:80px">
 	<div class="row">
 		<h4>EDIT ACTIVITY</h4>
-		<a class="addActivityLink" href="<?php echo base_url();?>site/view_child/<?php echo $this->session->userdata('child_id'); ?>"><span class='glyphicon glyphicon-arrow-left'></span>    Go back to summary screen</a>
+		<a class="addActivityLink" href="<?php echo base_url();?>index.php/site/view_child/<?php echo $this->session->userdata('child_id'); ?>"><span class='glyphicon glyphicon-arrow-left'></span>    Go back to summary screen</a>
 	</div>
 <div class="row">	
 <hr />
