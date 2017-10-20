@@ -289,8 +289,8 @@ Class Dev extends CI_Model
     }
 
     function get_activity(){
-      $this->db->where('activity_id',$this->uri->segment(3,0));
-      $query= $this->db->get('activity');
+      $this->db->where('activity_ID',$this->uri->segment(3,0));
+      $query = $this->db->get('activity');
       return $query->row();
     }
     
