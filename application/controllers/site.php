@@ -134,6 +134,7 @@ class site extends CI_Controller {
 	 }
 
 	 function delete_activity(){
+	 	$this->load->model('Dev');
 	 	$this->Dev->delete_activity();
 	 }
 
