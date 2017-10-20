@@ -237,35 +237,6 @@ These are the steps in this program. Please notify Help Me Grow if you need to c
 			       	<textarea class="form-control" name="comment"></textarea>
   </div>
 
-   <!-- <div class="form-group">
-    <label for="note">Is this the first service provided after re-enrollement</label>
-   
-			       	<select class="form-control" id="note" name="note">
-			       		<option value='Yes'>Yes, this is the first service of a new enrollment</option>
-			       		<option value='No'>No</option>
-		       	 	</select>
-  </div> -->
-
-
-<!-- <div class="form-group">
-
-    <label for="cohort">Cohort: *only applicable if you are using cohorts</label>
-			       	
-    				<select class="form-control" id="cohort" name="cohort">
-    				<?php foreach($cohorts as $cohort):?>
-			       		<option value='<?php echo $cohort->cohort_name; ?>'><?php echo $cohort->cohort_name; ?></option>
-			       	<?php endforeach; ?>	
-			       	</select>
-  </div> -->
-
-
-
-
-
-
-
-
-
 
  <input type="hidden" id="child_id1" name="child_id" value='<?php echo  $this->uri->segment(3,0); ?>'>
 

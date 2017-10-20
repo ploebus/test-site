@@ -74,39 +74,7 @@
     <label for="comment">Note:</label>
                     <textarea class="form-control" name="comment"><?php echo $activity->comment; ?></textarea>
   </div>
-   <!-- <div class="form-group">
-    <label for="note">Is this the first service provided after re-enrollement</label>
-			       	
-    		<?php
-
-    		$options = array(
-    			'Yes'=>'Yes, this is the first service of a new enrollment',
-    			'No'=>'No'
-    			);
-
-    		$attr ='class="form-control"';
-
-    		echo form_dropdown('note',$options,$activity->note,$attr);
-
-    		?>
-       
-  </div>
-
-
-<div class="form-group">
-    <label class="control-label col-sm-4" for="cohort">Cohort:</label>
-			       	
-    				<select id="cohort" class="form-control" name="cohort">
-    				<?php foreach($cohorts as $cohort):?>
-			       	if($cohort->cohort_name == $activity->cohort_name){	
-			       		<option value='<?php echo $cohort->cohort_name; ?>' selected='selected'><?php echo $cohort->cohort_name; ?></option>
-			       	}
-			       	else{
-			       		<option value='<?php echo $cohort->cohort_name; ?>'><?php echo $cohort->cohort_name; ?></option>
-			       	}
-			       	<?php endforeach; ?>	
-			       	</select>
-  </div> -->
+  
 
 
 
