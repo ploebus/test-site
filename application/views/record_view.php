@@ -123,7 +123,7 @@ These are the steps in this program. Please notify Help Me Grow if you need to c
 			<thead>
 			<th>Activity Date</th>
 			<th>Activity Type</th>
-			<th>Activity Length (min)</th>
+			<th>Activity Length(min)</th>
 			<th>Actions</th>
 			</thead>
 				<?php if($activities): ?>
