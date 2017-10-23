@@ -123,6 +123,7 @@ These are the steps in this program. Please notify Help Me Grow if you need to c
 			<thead>
 			<th>Activity Date</th>
 			<th>Activity Type</th>
+			<th>Activity Length (min)</th>
 			<th>Actions</th>
 			</thead>
 				<?php if($activities): ?>
@@ -130,6 +131,7 @@ These are the steps in this program. Please notify Help Me Grow if you need to c
 					<tr>
 						<td><?php echo $activity->activity_date; ?></td>
 						<td><?php echo $activity->activity_type; ?></td>
+						<td><?php echo $activity->visit_length; ?></td>
 						<td><a class='editActivity' href="../edit_activity/<?php echo $activity->activity_ID; ?>">EDIT</a> |  <a class='removeActivity' data-activity='<?php echo $activity->activity_ID; ?>' href="#">DELETE</a></td>
 					</tr>
 					<?php endforeach;?>
