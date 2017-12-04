@@ -12,7 +12,7 @@ This page contains records for children who have been marked as inactive or clos
 <div class="row">
 <div class="col-md-10">
 <h4>Children</h4>
-<table class='table table-striped'>
+<table class='table table-striped' id="archivedChildren">
 	<thead>
 	<th>NAME</th>
 	<th>DATE ENROLLED</th>
@@ -58,7 +58,9 @@ This page contains records for children who have been marked as inactive or clos
 		
 		var selectedChild;
 
-				
+		$(document).ready( function () {
+    $('#archivedChildren').DataTable();
+} );			
 	
 		$('.remove_child_start').click(function(event){
 			event.preventDefault();
