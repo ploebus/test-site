@@ -139,6 +139,7 @@ class site extends CI_Controller {
 	 }
 
 	 function create_endnote(){
+	 	$this->load->model('Dev');
 	 	$this->Dev->update_endnote();
 	 	//echo "Hello";
 	 }
