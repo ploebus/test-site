@@ -278,7 +278,7 @@ Class Dev extends CI_Model
   		$this->db->set('final_status',$this->input->post('final_status'));
   		$this->db->set('final_comment',trim($this->input->post('final_comment')));
       $this->db->set('final_date',$mysqldate);
-      $this->db->set('openSW','0');
+      //$this->db->set('openSW',0);
   		$this->db->update('child');
   	}
   	
