@@ -271,12 +271,12 @@ Class Dev extends CI_Model
   		$this->db->insert('activity',$data);
   	}
   	
-  	function update_endnote($data){
+  	function update_endnote(){
   		$phpdate = strtotime( $this->input->post('final_date'));
       $mysqldate = date( 'Y-m-d', $phpdate );
-      $this->db->where('child_id',$data['child_id']);
-  		$this->db->set('final_status',$data['final_status']);
-  		$this->db->set('final_comment',trim($data['final_comment']));
+      $this->db->where('child_id',$this->input->post('child_id'));
+  		$this->db->set('final_status',$this->input->post('final_status'));
+  		$this->db->set('final_comment',trim($this->input->post('final_comment')));
       $this->db->set('final_date',$mysqldate);
       $this->db->set('openSW','0');
   		$this->db->update('child');
