@@ -16,8 +16,8 @@ This page contains records for children who have been marked as inactive or clos
 	<thead>
 	<th>NAME</th>
 	<th>DATE ENROLLED</th>
-	<th>LAST COMPLETED STATUS</th>
-	<th>DATE OF STATUS COMPLETED</th>
+	<th>HMG ID</th>
+	<th>DATE ARCHIVED</th>
 	<th>ASSIGNED TO</th>
 	<th>ACTIONS</th>
 	</thead>
@@ -25,8 +25,8 @@ This page contains records for children who have been marked as inactive or clos
 	<tr>
 		<td><?php echo $child->child_firstname. " " . $child->child_lastname ;?></td>
 		<td><?php echo date_format(date_create($child->date_created),'m/d/Y'); ?></td>
-		<td><?php echo $child->description ;?></td>
-		<td><?php echo date_format(date_create($child->last_status_date),'m/d/Y'); ?></td>
+		<td><?php echo $child->hmg_referral_id; ;?></td>
+		<td><?php echo date_format(date_create($child->final_date),'m/d/Y'); ?></td>
 		<td><?php echo $child->AssignedTo ;?></td>
 		<td style='font-size:.9em'><a href ="view_child/<?php echo $child->child_id ;?>" class="recordView">VIEW</a> | <a class="remove_child_start" data-kid="<?php echo $child->child_id; ?>" href="do_something">REMOVE RECORD</a> | <a class="reopen_child" data-kid="<?php echo $child->child_id; ?>" href="reopen_child/<?php echo $child->child_id; ?>">REOPEN RECORD</a></td>
 	</tr>
