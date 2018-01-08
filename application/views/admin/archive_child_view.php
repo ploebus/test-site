@@ -12,6 +12,7 @@ This page contains records for children who have been marked as inactive or clos
 <div class="row">
 <div class="col-md-10">
 <h4>Children</h4>
+<h5>**Please click on field names to sort ascending or descending.</h5>
 <table class='table table-striped' id="archivedChildren">
 	<thead>
 	<th>NAME</th>
