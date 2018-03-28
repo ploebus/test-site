@@ -283,7 +283,7 @@ Check each item completed; add date complete; and press 'submit'
 	$("#submit_renewal").click(function(event){
 		var theData = $("#frm_renew_child").serialize();
 		console.log(theData);
-		$.post('<?php echo base_url();?>admin/renew_child', theData, function(data){
+		$.post('<?php echo base_url();?>index.php/admin/renew_child', theData, function(data){
 			console.log(data)
 		});
 		
