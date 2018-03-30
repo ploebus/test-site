@@ -143,10 +143,10 @@
 				window.location.href="<?php echo base_url(); ?>admin/home_page";
 
 			});
-		$('a#downloadData').click(function(event){
+		$('#downloadData').click(function(event){
 			event.preventDefault();
 			console.log('Success')
-		})
+		});
 
 
 		})
