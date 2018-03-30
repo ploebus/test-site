@@ -5,7 +5,7 @@
 	<div class="col-md-10">
 	<h4>Admin panel</h4>
 	Please use this area to enter children into the system and to assign them to an agency. You will be able to monitor their progress in the 'View' window for each child.
-	<hr />
+	
 	<div class='col-md-5'>
 		<h5><a href="archived_children"><i class="glyphicon glyphicon-th-list"></i> Click here to see inactive or closed clients</a></h5>
 	</div>
@@ -13,6 +13,7 @@
 		<h5 id="downloadData"><a href="#" ><i class="glyphicon glyphicon-save"></i> Click here to download all records</a></h5>
 	</div>
 	</div>
+	<hr />
 </div>
 <div class="row">
 	
@@ -150,6 +151,13 @@
 		$('#downloadData').click(function(event){
 			event.preventDefault();
 			console.log('Success')
+			<?php
+			$fp = fopen('file.csv','w');
+			foreach($children as $child){
+				fputcsv($fp, get_object_vars($child));
+			}
+			fclose($fp)
+			?>
 		});
 
 	</script>
