@@ -10,7 +10,7 @@
 		<h5><a href="archived_children"><i class="glyphicon glyphicon-th-list"></i> Click here to see inactive or closed clients</a></h5>
 	</div>
 	<div class='col-md-5'>
-		<h5><a href="#"><i class="glyphicon glyphicon-th-list"></i> Click here to download all records</a></h5>
+		<h5><a href="#"><i class="glyphicon-glyphicon-save"></i> Click here to download all records</a></h5>
 	</div>
 	</div>
 </div>
