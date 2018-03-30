@@ -230,8 +230,9 @@ These are the steps in this program. Please notify Help Me Grow if you need to c
 			       		<option value='30'>Less than 30 minutes</option>
 			       		<option value='60'>30 minutes to 59 minutes</option>
 			       		<option value='90'>60 minutes to 89 minutes</option>
-			       		<option value='120'>90 minutes to 119</option>
-			       		<option value='200'>More than 120 minutes</option>
+			       		<option value='120'>90 minutes to 119 minutes</option>
+			       		<option value='180'>120 minutes to 179 minutes</option>
+			       		<option value='200'>More than 180 minutes</option>
 			       	</select>
   </div>
 
