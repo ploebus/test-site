@@ -143,7 +143,8 @@
 				window.location.href="<?php echo base_url(); ?>admin/home_page";
 
 			});
-		$('#downloadData').click(function(){
+		$('#downloadData').click(function(event){
+			event.preventDefault();
 			console.log('Success')
 		})
 
