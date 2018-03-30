@@ -12,8 +12,9 @@
 	<div class='col-md-5'>
 		<h5 id="downloadData"><a href="#" ><i class="glyphicon glyphicon-save"></i> Click here to download all records</a></h5>
 	</div>
-	</div>
 	<hr />
+	</div>
+	
 </div>
 <div class="row">
 	
@@ -156,7 +157,7 @@
 			foreach($children as $child){
 				fputcsv($fp, get_object_vars($child));
 			}
-			fclose($fp)
+			fclose($fp);
 			?>
 		});
 
