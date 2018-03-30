@@ -210,7 +210,8 @@ Check each item completed; add date complete; and press 'submit'
 							<?php
 									$renewal = $renewal_item->status === '1'? true: false;
 									$data = array(
-							 		'name' => $renewal_item->status_item,
+							 		//'name' => $renewal_item->status_item,
+							 		'name'=>'status',
 							 		'id' => 'renewal_checkbox'
 							 		);
 							 		echo form_checkbox($data,'True',$renewal);
