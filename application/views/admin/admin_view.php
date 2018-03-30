@@ -6,7 +6,12 @@
 	<h4>Admin panel</h4>
 	Please use this area to enter children into the system and to assign them to an agency. You will be able to monitor their progress in the 'View' window for each child.
 	<hr />
-	<h5><a href="archived_children"><i class="glyphicon glyphicon-th-list"></i> Click here to see inactive or closed clients</a></h5>
+	<div class='col-md-5'>
+		<h5><a href="archived_children"><i class="glyphicon glyphicon-th-list"></i> Click here to see inactive or closed clients</a></h5>
+	</div>
+	<div class='col-md-5'>
+		<h5><a href="#"><i class="glyphicon glyphicon-th-list"></i> Click here to download all records</a></h5>
+	</div>
 	</div>
 </div>
 <div class="row">
