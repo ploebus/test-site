@@ -151,7 +151,8 @@
 			       	<select class="form-control" id="activity_type" name="activity_type">
 			       		<option>Home Visit</option>
 			       		<option>Office Visit</option>
-			       		<option>Phone Visit</option>
+			       		<option>Phone - Collateral</option>
+			       		<option>Phone - Family</option>
 			       		<option>Play Group</option>
 			       		<option>Other Visit</option>
 			       		<option>Support with Evaluation</option>
