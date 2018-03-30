@@ -273,8 +273,9 @@ Check each item completed; add date complete; and press 'submit'
 
 	$('.renewal').submit(function(event){
 		event.preventDefault();
-		console.log(event);
+		//console.log(event);
 		var data = $(this).serialize();
+		console.log(data)
 		$.post('<?php echo base_url();?>index.php/admin/update_status', data,function(data){
 			console.log(data);
 		})
