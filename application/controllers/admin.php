@@ -119,6 +119,18 @@ function download_file(){
 	echo json_encode($children);
 }
 
+function download_child_file(){
+	$this->load->model('Dev');
+	$children = $this->dev->download_child_file();
+	echo json_encode($children);
+}
+
+function download_activity_file(){
+	$this->load->model('Dev');
+	$activities = $this->dev->download_activity_file();
+	echo json_encode($activities);
+}
+
 function reopen_child(){
 	$this->load->model('Dev');
 	$cid = $this->uri->segment(3,0);

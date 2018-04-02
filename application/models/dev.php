@@ -86,6 +86,15 @@ Class Dev extends CI_Model
       return $query->result();
   	}
 
+    function download_child_file(){
+      $query = $this->db->get('child');
+      return $query->result();
+    }
+
+    function download_activity_file(){
+      $query = $this->db->get('activity');
+      return $query->result();
+    }
 
   	function create_cohort($data){
   		$this->db->insert('cohort',$data);
