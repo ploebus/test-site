@@ -153,7 +153,7 @@
 		$('#downloadData').click(function(event){
 			event.preventDefault();
 			console.log('Success')
-			$.post('download_file',function(data){
+			$.getJSON('download_file',function(data){
 				  var items = data;
         const replacer = (key, value) => value === null ? '' : value; // specify how you want to handle null values here
         const header = Object.keys(items[0]);
