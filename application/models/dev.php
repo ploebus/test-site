@@ -214,6 +214,7 @@ Class Dev extends CI_Model
   		$this->db->from('status');
   		$this->db->join('lkup_code', 'status.status_item=lkup_code.value');
   		$this->db->where('child_id',$child_id);
+      $this->db->where('Group','program status');
   		$this->db->not_like('status_item','0');
   		$query = $this->db->get();
   		return $query->result();
