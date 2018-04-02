@@ -113,6 +113,16 @@ function archive_child(){
 	
 }
 
+function download_file(){
+	$this->load->model('Dev');
+	$children = $this->dev->get_all_children();
+	$fp = fopen('file.csv','w');
+	foreach($children as $child){
+		fputcsv($fp, get_object_vars($child));
+	};
+	fclose($fp);
+}
+
 function reopen_child(){
 	$this->load->model('Dev');
 	$cid = $this->uri->segment(3,0);

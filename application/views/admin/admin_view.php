@@ -153,12 +153,9 @@
 		$('#downloadData').click(function(event){
 			event.preventDefault();
 			console.log('Success')
-			<?php
-			$fp = fopen('file.csv','w');
-			foreach($children as $child){
-				fputcsv($fp, get_object_vars($child));
-			};
-			fclose($fp);?>
+			$.post('download_file',function(data){
+				console.log('it happened')
+			}
 		});
 
 	</script>
