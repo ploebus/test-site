@@ -141,7 +141,7 @@ function reopen_child(){
 function renew_child(){
 	$this->load->model('Dev');
 	//check status
-	if ($this->dev->check_renewal_status($this->input->post('child_id')) === 1)
+	if ($this->dev->check_renewal_status($this->input->post('child_id')) === '1')
 	{
 	//catch renewal data
 	$info['child_id'] = $this->input->post('child_id');
