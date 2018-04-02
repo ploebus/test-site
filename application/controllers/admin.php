@@ -140,6 +140,9 @@ function reopen_child(){
 
 function renew_child(){
 	$this->load->model('Dev');
+	//check status
+	if ($this->dev->check_renewal_status($this->input->post('child_id')) === FALSE)
+	{
 	//catch renewal data
 	$info['child_id'] = $this->input->post('child_id');
 	$info['renewal_date'] = $this->input->post('renewal_date');
@@ -155,7 +158,10 @@ function renew_child(){
 
 	$this->output->set_content_type('application/json');
 	$this->output->set_output(json_encode(array('StatusItems'=> $htmlResponse)));
-
+	}
+	else {
+		echo "Child already renewed";
+	}
 }
 
 function archived_children(){

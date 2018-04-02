@@ -154,7 +154,14 @@ Class Dev extends CI_Model
       $this->db->update('child');
     }
 
-  	function renew_child($info){
+  	function check_renewal_status($cid){
+        $this->db->where('child_id', $cid);
+        $query = $this->db->get('child');
+        $row = $query->row();
+        return $row->renewalSW;
+    }
+    
+    function renew_child($info){
       $this->db->set('renewalSW', '1');
       $this->db->set('renewal_date', date('Y-m-d H:i:s', strtotime($info['renewal_date'])));
       $this->db->set('renewal_note', $info['renewal_note']);
