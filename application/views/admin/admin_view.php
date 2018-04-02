@@ -154,7 +154,7 @@
 			event.preventDefault();
 			console.log('Success')
 			$.post('download_file',function(data){
-				console.log(typeof data)
+				console.log(data)
 			});
 		});
 
