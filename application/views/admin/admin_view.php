@@ -166,7 +166,7 @@
         var blob = new Blob(["\ufeff", csv]);
         var url = URL.createObjectURL(blob);
         downloadLink.href = url;
-        downloadLink.download = "DataDump.csv";  //Name the file here
+        downloadLink.download = "Child.csv";  //Name the file here
         document.body.appendChild(downloadLink);
         downloadLink.click();
         document.body.removeChild(downloadLink);
