@@ -116,7 +116,7 @@ function archive_child(){
 function download_file(){
 	$this->load->model('Dev');
 	$children = $this->dev->get_all_children();
-	echo $children;
+	echo json_encode($children);
 }
 
 function reopen_child(){
