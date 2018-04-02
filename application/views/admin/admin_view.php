@@ -155,7 +155,7 @@
 			console.log('Success')
 			$.post('download_file',function(data){
 				console.log('it happened')
-			}
+			});
 		});
 
 	</script>
