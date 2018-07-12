@@ -67,7 +67,11 @@
 			       				echo form_dropdown('AssignedTo',$drop_items,$child->AssignedTo,$attributes);
 			       		?>
 
-					</div>		       			
+					</div>
+					<div class="form-group">	
+			       		<label class="control-label col-sm-4" for="hmg_id">NOTE FIELD</label>
+			       		<textarea id="child_note" class="form-control" rows="3" name="child_note"><?php echo $child->child_note; ?></textarea> 
+			       	</div>		       			
 					<hr />
 			       	<input type="hidden" id="child_id" name="child_id" value='<?php echo $child->child_id; ?>'>
 			    	
