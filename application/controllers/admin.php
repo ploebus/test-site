@@ -70,6 +70,7 @@ class Admin extends CI_Controller {
 	 		'caregiver_name'=>$this->input->post('caregiver_name'),
 	 		'child_id'=>$this->input->post('child_id'),
 	 		'AssignedTo'=>$this->input->post('AssignedTo')
+	 		'child_note'=>$this->input->post('child_note')
 	 		);
 	 	
 	 	$this->load->model('Dev');
