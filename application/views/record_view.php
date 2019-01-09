@@ -170,7 +170,7 @@ These are the steps in this program. Please notify Help Me Grow if you need to c
 	      		
 	      		<div class="form-group">
 	      			<label class="control-label col-sm-4" for="endnote_comment">Comment:</label>
-	      			<textarea name="final_comment" rows="4" cols="50"><?php echo $child->final_comment; ?></textarea>
+	      			<textarea name="final_comment" class="form-control" rows="5"><?php echo $child->final_comment; ?></textarea>
 				</div>
 				<hr /> 
 				<input type="hidden" id="child_id" name="child_id" value='<?php echo $child->child_id; ?>'>
