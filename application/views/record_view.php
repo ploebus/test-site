@@ -387,7 +387,7 @@ These are the steps in this program. Please notify Help Me Grow if you need to c
 		$data = $("#frm_endnote").serialize();
 		console.log($data);
 		$.post('../create_endnote',$data,function(data){
-			alert('success!')
+			alert('This child has been moved to the inactive list.')
 			location.reload();
 		})
 		
