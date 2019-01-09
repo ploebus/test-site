@@ -388,9 +388,9 @@ These are the steps in this program. Please notify Help Me Grow if you need to c
 		console.log($data);
 		$.post('../create_endnote',$data,function(data){
 			alert('success!')
-			
+			location.reload();
 		})
-		//location.reload();
+		
 	})
 $('.status').submit(function(event){
 		event.preventDefault();
