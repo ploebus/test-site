@@ -390,7 +390,7 @@ These are the steps in this program. Please notify Help Me Grow if you need to c
 			alert('success!')
 			
 		})
-		location.reload();
+		//location.reload();
 	})
 $('.status').submit(function(event){
 		event.preventDefault();
